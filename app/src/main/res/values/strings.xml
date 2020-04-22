@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VPN</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="save">Save</string>
+</resources>
