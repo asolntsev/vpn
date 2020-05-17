@@ -1,4 +1,4 @@
-package ru.bspb.vpn
+package io.github.asolntsev.vpn
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,7 +8,7 @@ import androidx.security.crypto.MasterKeys
 
 class PasswordStorage(applicationContext: Context) {
     private val sharedPreferences: SharedPreferences = EncryptedSharedPreferences.create(
-        "bspb-vpn",
+        "vpn-password",
         MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC),
         applicationContext,
         EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,

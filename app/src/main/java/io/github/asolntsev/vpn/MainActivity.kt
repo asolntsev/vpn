@@ -1,4 +1,4 @@
-package ru.bspb.vpn
+package io.github.asolntsev.vpn
 
 import android.content.ClipData.newPlainText
 import android.content.ClipboardManager
@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        passwordStorage = PasswordStorage(applicationContext)
+        passwordStorage =
+            PasswordStorage(applicationContext)
         clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
 
         passwordInput.setOnFocusChangeListener { _, _ ->
