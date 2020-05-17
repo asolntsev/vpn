@@ -30,7 +30,7 @@
     android:layout_height="wrap_content">
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordInput"
         android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,6 +44,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/save"
+        android:id="@+id/saveButton"
         android:text="@string/save"/>
 </LinearLayout>
